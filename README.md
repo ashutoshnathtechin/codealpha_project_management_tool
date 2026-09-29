@@ -1,47 +1,19 @@
-# Collaborative Project Management Tool
+# Project Hub
 
-This is a full-stack, real-time project management application built as a clone of tools like Trello and Asana. It allows users to create group projects, manage tasks with a Kanban-style drag-and-drop board, assign tasks, and communicate in real-time.
+Project Hub is a modern, full-stack workspace coordination platform. Built with a clean and intuitive interface, it allows teams to manage their workflows using an interactive, Kanban-style board that syncs instantly across all devices using WebSockets.
 
-## Features
-- **User Authentication**: Secure login and registration using JWT and bcrypt.
-- **Project Hub**: Create group projects and invite team members via email.
-- **Interactive Kanban Boards**: Create lists and seamlessly drag-and-drop task cards.
-- **Real-time Collaboration**: Built with WebSockets (Socket.io). When a team member moves a card, adds a comment, or updates an assignee, the changes are instantly reflected on all clients.
-- **Task Management**: Assign tasks to specific members and participate in live comment threads.
-- **Notifications**: Toast notifications alert you when other members comment on tasks.
+## Core Features
+- **Workspaces & Collaboration**: Create unique team projects and invite users effortlessly.
+- **Drag-and-Drop Workflow**: Seamlessly move tasks between stages in real-time.
+- **Instant Sync**: Powered by Socket.io, the application ensures you never need to refresh the page to see a teammate's updates.
+- **Live Chat & Notifications**: Discuss tasks directly in the task modal and receive instant toast notifications.
 
 ## Tech Stack
-- **Frontend**: React.js (Vite), Tailwind CSS, Zustand (State Management), React-Hot-Toast, @hello-pangea/dnd (Drag and drop).
-- **Backend**: Node.js, Express.js.
-- **Database**: MongoDB (Mongoose).
-- **Real-time**: Socket.io.
+- **Client**: React, Vite, Zustand, Tailwind CSS, `@hello-pangea/dnd`
+- **Server**: Node.js, Express, MongoDB
+- **Real-time Engine**: Socket.io
 
-## Prerequisites
-- Node.js installed on your machine.
-- MongoDB running locally on port 27017.
-
-## Installation & Setup
-
-1. **Extract the Repository**
-2. **Backend Setup**
-   ```bash
-   cd backend
-   npm install
-   npm run dev
-   ```
-   *The backend server will run on http://localhost:5000*
-
-3. **Frontend Setup**
-   Open a new terminal window:
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-   *The frontend application will run on http://localhost:5173*
-
-## Usage
-1. Open `http://localhost:5173` in your browser.
-2. Register a new account.
-3. Create a project and start adding lists and tasks.
-4. To test real-time features, open an incognito window, register a second user, invite them to your project, and drag cards around!
+## Setup Instructions
+1. Run `npm install` and `npm run dev` in the `/backend` folder.
+2. Run `npm install` and `npm run dev` in the `/frontend` folder.
+3. Open `http://localhost:5173`.
